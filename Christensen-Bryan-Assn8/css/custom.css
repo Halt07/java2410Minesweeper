@@ -1,0 +1,48 @@
+.button {
+    -fx-background-color: lightslategray;
+    -fx-border-color: black;
+    -fx-border-radius: 0;
+    -fx-border-width: .5;
+    -fx-content-display: graphic-only;
+    -fx-padding: 0px;
+}
+
+.button:hover {
+    -fx-background-color: aqua;
+}
+
+.button:disabled {
+    -fx-opacity: 1;
+}
+
+#clicked-mine:disabled {
+    -fx-background-color: red;
+    -fx-graphic: url("bomb.png");
+}
+
+#flagged-mine:disabled {
+    -fx-background-color: green;
+    -fx-graphic: url("bomb.png");
+}
+
+#mine-cell:pressed {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+
+}
+
+#normal-cell:pressed {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+
+}
+
+#clicked-normal:disabled {
+    -fx-background-color: transparent;
+    -fx-content-display: text-only;
+    -fx-text-fill: black;
+}
+
+#flagged-normal:disabled {
+    -fx-background-color: yellow;
+}
